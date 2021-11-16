@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: gke-test
   labels:
-    app: nginx
+    app: node-app
 spec:
   replicas: 3
   selector:
@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: node-app-label
+        app: node-app
     spec:
       containers:
       - name: nodejs
