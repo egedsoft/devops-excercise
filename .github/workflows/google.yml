@@ -16,7 +16,8 @@ on:
   push:
     branches:
       - master
-
+# Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_CLUSTER: autopilot-cluster-1    # TODO: update to cluster name
