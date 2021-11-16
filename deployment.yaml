@@ -15,7 +15,7 @@ spec:
         app: node-app
     spec:
       containers:
-      - name: opslabs
-        image: gcr.io/opslabs/static-site
+      - name: gcr.io/PROJECT_ID/IMAGE:TAG
+        image: gcr.io/PROJECT_ID/IMAGE:TAG
         ports:
         - containerPort: 3000
