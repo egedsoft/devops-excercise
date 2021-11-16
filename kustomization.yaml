@@ -4,7 +4,3 @@ kind: Kustomization
 resources:
   - deployment.yaml
 
-images:
-- name: foo/bar
-  newName: foo/bar
-  newTag: 3.4.5a
