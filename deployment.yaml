@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: opslabs
-        image: gcr.io/test
+        image: gcr.io/PROJECT_ID/IMAGE:TAG
         ports:
         - containerPort: 3000
