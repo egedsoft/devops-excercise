@@ -6,4 +6,4 @@ resources:
 
 images:
 - name: PROJECT/IMAGE
-  newName: test/opslabs-test
+  
