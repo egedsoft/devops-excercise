@@ -3,3 +3,8 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml 
+
+images:
+- name: opslabs
+  newName: gcr.io/opslabs/static-site:ab31f37546d9dd8f0f8c0186e1487857c569136d
+  newTag: test
