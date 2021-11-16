@@ -15,8 +15,10 @@ spec:
         app: node-app
     spec:
       containers:
-      - name: opslabs
-        image: 'Dockerfile'
+        - name: opslabs
+          env:
+            - name: CUSTOM_ENV_VARIABLE
+              value: Value defined by Kustomize
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
