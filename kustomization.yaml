@@ -3,7 +3,3 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
-
-images:
-- name: tmp_image
-  newName: gcr.io/PROJECT_ID/IMAGE:TAG=gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA
