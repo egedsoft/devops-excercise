@@ -4,18 +4,4 @@ metadata:
   name: gke-test
   labels:
     app: node-app
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: node-app
-  template:
-    metadata:
-      labels:
-        app: node-app
-    spec:
-      containers:
-      - name: opslabs
-        image: gcr.io/opslabs/static-site:ab31f37546d9dd8f0f8c0186e1487857c569136d
-        ports:
-        - containerPort: 3000
+
