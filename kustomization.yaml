@@ -3,3 +3,7 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
+
+images:
+- name: opslabs
+  newName: gcr.io/PROJECT_ID/IMAGE:TAG=gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA
