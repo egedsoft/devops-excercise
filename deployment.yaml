@@ -2,16 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gke-test
+  labels:
+    app: node-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: opslabs
+      app: node-app
   template:
     metadata:
       labels:
-        app: opslabs
+        app: node-app
     spec:
       containers:
-        - name: opslabs
-          image: tmp_image
+      - name: opslabs
+        image: gcr.io/opslabs/static-site:ab31f37546d9dd8f0f8c0186e1487857c569136d
+        ports:
+        - containerPort: 3000
