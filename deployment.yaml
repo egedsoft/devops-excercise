@@ -17,5 +17,6 @@ spec:
       containers:
       - name: opslabs
         image: gcr.io/opslabs/static-site:ab31f37546d9dd8f0f8c0186e1487857c569136d
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
