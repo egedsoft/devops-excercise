@@ -5,5 +5,5 @@ resources:
 - service.yaml
 
 images:
-- name: PROJECT/IMAGE
-  
+- name: tmp_image
+  newName: gcr.io/PROJECT_ID/IMAGE:TAG=gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA
